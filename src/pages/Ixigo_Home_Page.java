@@ -66,6 +66,8 @@ public class Ixigo_Home_Page {
 
 //  Generic Function used to select the desired date & month on the calendar	
 	public void select_date_from_calendar(String calendar_name, String desired_month, String desired_date) {
+// I am calling generate_xpath_for_calendar function here as i have made this function generic in a way it can handle both Departure & Return calendars
+// In case of any other new calendars in future you can just add the xpaths to the below function & pass the calendar name & it should be able to handle them 		
 		generate_xpath_for_calendar(calendar_name, desired_date);
 		driver.findElement(By.xpath(calendar_xpath)).click();
 		String current_month = driver.findElement(By.xpath(current_month_text_xpath)).getText();

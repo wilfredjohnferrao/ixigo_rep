@@ -91,14 +91,15 @@ public class FlightListingPage {
 
 			if (Integer.parseInt(airline_fare) < ticket_range) {
 				System.out.print("Airline Number: " + airline_number);
-				System.out.print(", Departure Time: " + departure_time);
-				System.out.println(", Fare Amount:" + airline_fare + " Rs/-");
+				System.out.print(",      Departure Time: " + departure_time);
+				System.out.println(",      Fare Amount: " + airline_fare + " Rs/-");
 			}
 		}	
 	}
 	
 // Function to call the ticket printing method with necessary details
 	public void print_ticket_details_within_desired_range(int ticket_range){
+// Gets & stores the details of departuredate flight details ticket count, Departure place & departure date which will be printed below		
 		int departure_day_tickets_count =departure_date_tickets_container.size();
 		String departure_place= departure_place_details.getText();
 		String departure_date = departure_date_details.getText();
@@ -118,6 +119,7 @@ public class FlightListingPage {
 		System.out.println();
 		System.out.println("*******************************************************************************************");
 		
+// Gets & stores the details of return day flights details ticket count, Departure place & departure date which will be printed below		
 		int return_day_tickets_count= return_date_tickets_container.size();
 		String return_flight_place = return_flight_place_details.getText(); 
 		String return_flight_date = return_flight_date_details.getText();

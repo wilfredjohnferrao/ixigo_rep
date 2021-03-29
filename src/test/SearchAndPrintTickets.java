@@ -11,17 +11,17 @@ import pages.Ixigo_Home_Page;
 public class SearchAndPrintTickets {
 	
 	@Test
-	public void search_for_flight_ticket(){
+	public void search_for_flight_ticket_and_print_requested_details(){
 //	Launches the browser & Navigates to ixigo.com	
 	WebDriver driver= BrowserFactory.open_browser("chrome", "https://www.ixigo.com");
 	
 //	Creating the ixigo home page object using page factory
 	Ixigo_Home_Page home=  PageFactory.initElements(driver, Ixigo_Home_Page.class);
 	
-// Calling the Search flight ticket Method
+// Validating the ixigo home page and entering the from & to Details
 	home.ixigo_enter_from_and_to_details("DEL - New Delhi", "BLR - Bengaluru");
 	
-// Selecting Departure & Return Dates from Calendar
+// Selecting desired Departure & Return Dates from Calendar
 	home.select_date_from_calendar("Departure", "April 2021", "27");
 	home.select_date_from_calendar("Return", "June 2021", "24");
 	
