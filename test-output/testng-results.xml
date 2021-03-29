@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="37391" started-at="2021-03-29T13:22:59 IST" finished-at="2021-03-29T13:23:37 IST">
+  <suite name="Suite" duration-ms="39581" started-at="2021-03-29T15:45:52 IST" finished-at="2021-03-29T15:46:31 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="37391" started-at="2021-03-29T13:22:59 IST" finished-at="2021-03-29T13:23:37 IST">
+    <test name="Test" duration-ms="39581" started-at="2021-03-29T15:45:52 IST" finished-at="2021-03-29T15:46:31 IST">
       <class name="test.SearchAndPrintTickets">
-        <test-method status="PASS" signature="search_for_flight_ticket_and_print_requested_details()[pri:0, instance:test.SearchAndPrintTickets@22a67b4]" name="search_for_flight_ticket_and_print_requested_details" duration-ms="37315" started-at="2021-03-29T13:22:59 IST" finished-at="2021-03-29T13:23:37 IST">
+        <test-method status="PASS" signature="search_for_flight_ticket_and_print_requested_details()[pri:0, instance:test.SearchAndPrintTickets@22a67b4]" name="search_for_flight_ticket_and_print_requested_details" duration-ms="39543" started-at="2021-03-29T15:45:52 IST" finished-at="2021-03-29T15:46:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_for_flight_ticket_and_print_requested_details -->
