@@ -112,8 +112,8 @@ public class FlightListingPage {
 //	i have stored the part of xpath on the below string & passing it to print_ticket_details function to create the full xpath.
 		String part_of_depature_tickets_xpath = "//div[(@class='result-col outr')]/div/div[contains(@class,'c-flight-listing-split-row')][";
 
-		System.out.println("Below Are the Requested details of A Departure Date Flights");
-		print_ticket_details(departure_day_tickets_count,part_of_depature_tickets_xpath, 7000);
+		System.out.println("Below Are the Requested details of A Departure Date Flights below Rs "+ticket_range);
+		print_ticket_details(departure_day_tickets_count,part_of_depature_tickets_xpath, ticket_range);
 		
 		System.out.println();
 		System.out.println("*******************************************************************************************");
@@ -130,7 +130,7 @@ public class FlightListingPage {
 //	i have stored the part of xpath on the below string & passing it to print_ticket_details function to create the full xpath.
 		String part_of_return_tickets_xpath = "//div[(@class='result-col')]/div/div[contains(@class,'c-flight-listing-split-row')][";
 		
-		System.out.println("Below Are the details of A Return Date Flights");
+		System.out.println("Below Are the Requested details of A Return Date Flights below Rs "+ticket_range);
 		print_ticket_details(return_day_tickets_count, part_of_return_tickets_xpath, ticket_range);
 	}
 }
